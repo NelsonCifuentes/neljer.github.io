@@ -1,0 +1,75 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"
+    </head> 
+    <body>
+        <h1>
+            INSCRÍBETE AL JUEGO
+        </h1>
+        <h1> 
+            <img src="./images/juego.jpg" 
+            alt="Juego" width="800" height="400" />
+        </h1>
+        <form>
+            <fieldset>
+                <legend>Ingrese su usuario y contraseña:</legend>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="unsername" required="required"/><br/>
+                <label for="password">Password:</label> 
+                <input type="password" name="password" id="password" required="required"/>
+            </fieldset>  
+            <fieldset>
+                <legend>Sus datos:</legend>
+                <label>Nombres Completos:<br/><input type="text" name="text" required="required"/></label><br/>
+                <label>Apellidos Completos:<br/><input type="text" name="text" required="required"/></label><br/>
+                <label>Email:<br/><input type="text" name="email" required="required"/></label><br/>
+                <label>Edad:<br/><input type="text" name="age" required="required"/></label><br/>
+                <br/>
+                <legend>Genero:</legend>
+                <input id="Niña" type="radio" name="gender" value="f"
+                <label for="Niña">Niña</label>
+                <input id="Niño" type="radio" name="gender" value="m" 
+                <label for="Niño">Niño</label> <br/>
+                <br/>
+                <label>Fecha de nacimiento:</label> <br/>
+                <input type="date" name="depart"/><br/>
+                <br/>
+                <label>Sube una foto para tu perfil:</label> <br/>
+                <input type="file" name="Fotografia"/><br/>
+              </fieldset>   
+            <fieldset>
+                <legend>Su opinion:</legend>
+                ¿Como se enteraron de nosotros?
+                <select name="devices">
+                    <option value="ipop">Google</option>
+                    <option value="radio">Firefox</option>
+                    <option value="computer">Microsoft Edge</option>
+                </select>
+                <br/>
+                <p>
+                    ¿Volverias a visitarnos?
+                </p>
+                <input type="checkbox" name="opinion" value="si" /> Si
+                <input type="checkbox" name="opinion" value="No" /> No
+                <input type="checkbox" name="opinion" value="Quizas" /> Quizas 
+                <br/>
+                Ingrese sus comentarios:
+                <br/>
+                <textarea name="comments" cols="40" rows="4"></textarea>
+                <br/>
+                <p>
+
+                </p>
+                <input  type="radio" name="Inscríbete"/>
+                Acepto los terminos y condiciones del juego
+                <br/>
+                <input type="submit" name="Inscríbete" value="Inscribirme "/>  
+            </fieldset>  
+        </body>
+
+    <p align="right">
+        <a href=..\index.html> Regresar
+            <input type="image" src="images/regresar.jpg" width="50" height="50" />
+        </a>
+    </p>
+</html>

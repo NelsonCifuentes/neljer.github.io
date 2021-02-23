@@ -1,0 +1,41 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"
+    </head> 
+    <body>
+        <form action="http://www.example.com/subscribe.php">
+            <fieldset>
+                <legend>Sus datos:</legend>
+                <label>Nombre:<br/><input type="text" name="text"/></label><br/>
+                <label>Email:<br/><input type="text" name="email"/></label>
+            </fieldset>   
+            <fieldset>
+                <legend>Su opinion:</legend>
+                ¿Como se enteraron de nosotros?
+                <select name="devices">
+                    <option value="ipop">Google</option>
+                    <option value="radio">Firefox</option>
+                    <option value="computer">Microsoft Edge</option>
+                </select>
+                <br/>
+                <p>
+                    ¿Volverias a visitarnos?
+                </p>
+                <input type="radio" name="opinion" value="si" /> Si
+                <input type="radio" name="opinion" value="No" /> No
+                <input type="radio" name="opinion" value="Quizas" /> Quizas 
+                <br/>
+                Ingrese sus comentarios:
+                <br/>
+                <textarea name="comments" cols="40" rows="4"></textarea>
+                <br/>
+                <p>
+
+                </p>
+                <input  type="radio" name="subscribe"/>
+                Inscribete para actualizaciones por correo electronico
+                <br/>
+                <input type="submit" name="subscribe" value="Submit review"/>  
+            </fieldset>  
+    </body>
+</html>
