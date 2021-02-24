@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+           UNIDAD 3 JAVA
+        </title>   
+        <script Language="javascript" type="text/javascript">
+        
+        var dato, resultado;
+            dato = window.prompt("Introduce tu nombre", "");
+            resultado = `Hola, como estas ${dato}, oprime Aceptar para continuar y selecciona una opcion ` ;
+
+        alert(resultado);
+        
+        const day=new Date().getDay();
+          switch (day){
+            case 1:
+            valDay="Feliz Lunes!"
+            break;
+            case 2:
+            valDay="Es Martes, un dia especial"
+            break;
+            case 3:
+            valDay="Miercoles, ya vamos a la mitad"
+            break;
+            case 4:
+            valDay="Es jueves, Solo un dia mas paa el fin de semana"
+            break;
+            case 5:
+            valDay="Feliz Viernes, listos!!"
+            break;
+            case 6:
+            valDay="Que tengan un maravilloso sabado"
+            break;
+            case 7:
+            valDay="Es Domingo, hora de realajarse"
+            break;
+            default:
+              alert("No hay dia");
+          }
+          alert('Mensaje del dia: '+valDay)
+        </script>
+
+        </script>
+    </head> 
+    <body>
+
+    </body>
+</html>
