@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+           Ejemplo 51
+        </title>   
+        <script Language="javascript" type="text/javascript">
+    
+            var dato, resultado;
+            dato = window.prompt("Introduce tu nombre", "");
+            resultado = `Hola, como estas ${dato}, oprime Aceptar para continuar y selecciona una opcion ` ;
+
+    alert(resultado);
+
+    var opcion=prompt("Menu de opciones" +
+            "\n--------------------------------"+
+            "\n1. Verifica si estas en el promedio de estatura" +
+            "\n2. Verifica si puedes tomar o no segun tu edad" +
+            "\n3. Realiza una operacion matematica " +
+            "\n4. Finalizar" +
+            "\nElija una opcion:" );
+            opcion=parseInt(opcion);
+            if(opcion==1){
+                var altura=prompt("Introduzca su estatura en cm: ");
+          altura=parseInt(altura);
+          if(altura >=150 && altura <= 160)
+            alert("Eres un Minion");
+          else if (altura >= 161 && altura <= 170)
+            alert("Estas en el promedio");
+          else if (altura >=  171 && altura <= 180)
+            alert("Ya te comienza a marear la altura");
+            else if (altura >= 181 && altura <= 200)
+            alert("Ten Cuidado con los aviones");
+            
+            }else if(opcion==2){
+                var edad=prompt("Ingrese Tu Edad: ");
+                edad=parseInt(edad);
+                noPuedeBeber=(edad<18)||(edad>60);
+                if(noPuedeBeber){
+                    alert("No Puedes consumir licor");
+                }else{
+                    alert("Puedes Consumir una cerveza");
+                }
+                }else if(opcion==3){
+                    function Suma(sum) {
+            var num1 =prompt ("ingrese el primer numero: ");//Se ingresa el numero: 10
+            var num2 =prompt ("ingrese el primer numero: ");//Se ingresa el numero: 20
+            sum = num1+num2
+            alert(sum);
+        }
+        function Resta(res) {
+            var num1 =prompt ("ingrese el primer numero: ");
+            var num2 =prompt ("ingrese el primer numero: ");
+            res = num1-num2
+            alert(res);
+        }
+        function Multiplicacion(mul) {
+            var num1 =prompt ("ingrese el primer numero: ");
+            var num2 =prompt ("ingrese el primer numero: ");
+            mul = num1*num2;
+            alert(mul);
+        }
+        function Division(div) {
+            var num1 =prompt ("ingrese el primer numero: ");
+            var num2 =prompt ("ingrese el primer numero: ");
+            div = num1/num2;
+            alert(div);
+        }
+                }else{
+                    alert("Ha selccionado terminar");
+                }
+
+        </script>
+    </head> 
+    <body>
+        <input type="button" onclick="Suma()" value="Suma">
+        <input type="button" onclick="Resta()" value="Resta">
+        <input type="button" onclick="Multiplicacion()" value="Multiplicacion">
+        <input type="button" onclick="Division()" value="Division">
+      
+    </body>
+</html>

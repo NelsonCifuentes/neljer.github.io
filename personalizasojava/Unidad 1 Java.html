@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+           Ejemplo 51
+        </title>   
+        <script Language="javascript" type="text/javascript">
+    
+            var dato, resultado;
+            dato = window.prompt("Introduce tu nombre", "");
+            resultado = `Hola, como estas ${dato}, oprime Aceptar para continuar y selecciona una opcion ` ;
+
+    alert(resultado);
+
+    var opcion=prompt("Menu de opciones" +
+            "\n--------------------------------"+
+            "\n1. Horóscopo de hoy" +
+            "\n2. Frase del dia" +
+            "\n3. Mira el clima de tu zona " +
+            "\n4. Finalizar" +
+            "\nElija una opcion:" );
+            opcion=parseInt(opcion);
+            if(opcion==1){
+                alert("No dejes que te hagan cómplice de un acto que repruebas. Guíate por tu instinto. Aléjate de futuros problemas.");
+            }else if(opcion==2){
+                alert("“No cuentes los días, haz que los días cuenten.”");
+            }else if(opcion==3){
+                alert("Dia soleado, aprovecha y da un paseo, no olvides usar tapabocas ");
+            }else{
+                alert("Ha selccionado terminar");
+            }
+
+        </script>
+    </head> 
+    <body>
+
+    </body>
+</html>
